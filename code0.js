@@ -17,16 +17,41 @@ gdjs.NewSceneCode.GDCirclespaceObjects1= [];
 gdjs.NewSceneCode.GDCirclespaceObjects2= [];
 gdjs.NewSceneCode.GDTrianglespaceObjects1= [];
 gdjs.NewSceneCode.GDTrianglespaceObjects2= [];
+gdjs.NewSceneCode.GDHeartObjects1= [];
+gdjs.NewSceneCode.GDHeartObjects2= [];
+gdjs.NewSceneCode.GDLiveTextObjects1= [];
+gdjs.NewSceneCode.GDLiveTextObjects2= [];
+gdjs.NewSceneCode.GDScoreTxtObjects1= [];
+gdjs.NewSceneCode.GDScoreTxtObjects2= [];
+gdjs.NewSceneCode.GDLineUpObjects1= [];
+gdjs.NewSceneCode.GDLineUpObjects2= [];
 
 gdjs.NewSceneCode.conditionTrue_0 = {val:false};
 gdjs.NewSceneCode.condition0IsTrue_0 = {val:false};
 gdjs.NewSceneCode.condition1IsTrue_0 = {val:false};
+gdjs.NewSceneCode.condition2IsTrue_0 = {val:false};
+gdjs.NewSceneCode.condition3IsTrue_0 = {val:false};
 gdjs.NewSceneCode.conditionTrue_1 = {val:false};
 gdjs.NewSceneCode.condition0IsTrue_1 = {val:false};
 gdjs.NewSceneCode.condition1IsTrue_1 = {val:false};
+gdjs.NewSceneCode.condition2IsTrue_1 = {val:false};
+gdjs.NewSceneCode.condition3IsTrue_1 = {val:false};
 
 
-gdjs.NewSceneCode.mapOfGDgdjs_46NewSceneCode_46GDTriangleFilledObjects1Objects = Hashtable.newFrom({"TriangleFilled": gdjs.NewSceneCode.GDTriangleFilledObjects1});gdjs.NewSceneCode.mapOfGDgdjs_46NewSceneCode_46GDBoxFilledObjects1Objects = Hashtable.newFrom({"BoxFilled": gdjs.NewSceneCode.GDBoxFilledObjects1});gdjs.NewSceneCode.mapOfGDgdjs_46NewSceneCode_46GDCircelFilledObjects1Objects = Hashtable.newFrom({"CircelFilled": gdjs.NewSceneCode.GDCircelFilledObjects1});gdjs.NewSceneCode.mapOfGDgdjs_46NewSceneCode_46GDTriangleFilledObjects1Objects = Hashtable.newFrom({"TriangleFilled": gdjs.NewSceneCode.GDTriangleFilledObjects1});gdjs.NewSceneCode.eventsList0xb43b0 = function(runtimeScene) {
+gdjs.NewSceneCode.mapOfGDgdjs_46NewSceneCode_46GDBoxFilledObjects1Objects = Hashtable.newFrom({"BoxFilled": gdjs.NewSceneCode.GDBoxFilledObjects1});gdjs.NewSceneCode.eventsList0xb43b0 = function(runtimeScene) {
+
+{
+
+
+gdjs.NewSceneCode.condition0IsTrue_0.val = false;
+{
+gdjs.NewSceneCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+}if (gdjs.NewSceneCode.condition0IsTrue_0.val) {
+{runtimeScene.getVariables().get("x").setNumber(0);
+}}
+
+}
+
 
 {
 
@@ -34,18 +59,12 @@ gdjs.NewSceneCode.mapOfGDgdjs_46NewSceneCode_46GDTriangleFilledObjects1Objects =
 gdjs.NewSceneCode.condition0IsTrue_0.val = false;
 {
 {gdjs.NewSceneCode.conditionTrue_1 = gdjs.NewSceneCode.condition0IsTrue_0;
-gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(6888180);
+gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(6900988);
 }
 }if (gdjs.NewSceneCode.condition0IsTrue_0.val) {
 gdjs.NewSceneCode.GDBoxFilledObjects1.length = 0;
 
-gdjs.NewSceneCode.GDCircelFilledObjects1.length = 0;
-
-gdjs.NewSceneCode.GDTriangleFilledObjects1.length = 0;
-
-{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.NewSceneCode.mapOfGDgdjs_46NewSceneCode_46GDTriangleFilledObjects1Objects, 95, -(12), "8");
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.NewSceneCode.mapOfGDgdjs_46NewSceneCode_46GDBoxFilledObjects1Objects, 185, -(12), "8");
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.NewSceneCode.mapOfGDgdjs_46NewSceneCode_46GDCircelFilledObjects1Objects, 17, -(12), "8");
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.NewSceneCode.mapOfGDgdjs_46NewSceneCode_46GDBoxFilledObjects1Objects, 14, -(12), "8");
 }}
 
 }
@@ -67,21 +86,8 @@ gdjs.NewSceneCode.GDTriangleFilledObjects1.createFrom(runtimeScene.getObjects("T
 }{for(var i = 0, len = gdjs.NewSceneCode.GDCircelFilledObjects1.length ;i < len;++i) {
     gdjs.NewSceneCode.GDCircelFilledObjects1[i].addForce(0, 50, 0);
 }
-}}
-
-}
-
-
-{
-
-
-gdjs.NewSceneCode.condition0IsTrue_0.val = false;
-{
-gdjs.NewSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Right");
-}if (gdjs.NewSceneCode.condition0IsTrue_0.val) {
-gdjs.NewSceneCode.GDTriangleFilledObjects1.createFrom(runtimeScene.getObjects("TriangleFilled"));
-{for(var i = 0, len = gdjs.NewSceneCode.GDTriangleFilledObjects1.length ;i < len;++i) {
-    gdjs.NewSceneCode.GDTriangleFilledObjects1[i].setX(187);
+}{for(var i = 0, len = gdjs.NewSceneCode.GDTriangleFilledObjects1.length ;i < len;++i) {
+    gdjs.NewSceneCode.GDTriangleFilledObjects1[i].setLayer("3");
 }
 }}
 
@@ -90,27 +96,28 @@ gdjs.NewSceneCode.GDTriangleFilledObjects1.createFrom(runtimeScene.getObjects("T
 
 {
 
-gdjs.NewSceneCode.GDTriangleFilledObjects1.createFrom(runtimeScene.getObjects("TriangleFilled"));
+gdjs.NewSceneCode.GDBoxFilledObjects1.createFrom(runtimeScene.getObjects("BoxFilled"));
 
 gdjs.NewSceneCode.condition0IsTrue_0.val = false;
+gdjs.NewSceneCode.condition1IsTrue_0.val = false;
 {
-for(var i = 0, k = 0, l = gdjs.NewSceneCode.GDTriangleFilledObjects1.length;i<l;++i) {
-    if ( gdjs.NewSceneCode.GDTriangleFilledObjects1[i].getY() > 270 ) {
+for(var i = 0, k = 0, l = gdjs.NewSceneCode.GDBoxFilledObjects1.length;i<l;++i) {
+    if ( gdjs.NewSceneCode.GDBoxFilledObjects1[i].getX() == 14 ) {
         gdjs.NewSceneCode.condition0IsTrue_0.val = true;
-        gdjs.NewSceneCode.GDTriangleFilledObjects1[k] = gdjs.NewSceneCode.GDTriangleFilledObjects1[i];
+        gdjs.NewSceneCode.GDBoxFilledObjects1[k] = gdjs.NewSceneCode.GDBoxFilledObjects1[i];
         ++k;
     }
 }
-gdjs.NewSceneCode.GDTriangleFilledObjects1.length = k;}if (gdjs.NewSceneCode.condition0IsTrue_0.val) {
-gdjs.NewSceneCode.GDCircelFilledObjects1.createFrom(runtimeScene.getObjects("CircelFilled"));
-/* Reuse gdjs.NewSceneCode.GDTriangleFilledObjects1 */
-{for(var i = 0, len = gdjs.NewSceneCode.GDTriangleFilledObjects1.length ;i < len;++i) {
-    gdjs.NewSceneCode.GDTriangleFilledObjects1[i].deleteFromScene(runtimeScene);
+gdjs.NewSceneCode.GDBoxFilledObjects1.length = k;}if ( gdjs.NewSceneCode.condition0IsTrue_0.val ) {
+{
+gdjs.NewSceneCode.condition1IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Right");
+}}
+if (gdjs.NewSceneCode.condition1IsTrue_0.val) {
+/* Reuse gdjs.NewSceneCode.GDBoxFilledObjects1 */
+{for(var i = 0, len = gdjs.NewSceneCode.GDBoxFilledObjects1.length ;i < len;++i) {
+    gdjs.NewSceneCode.GDBoxFilledObjects1[i].setX(92);
 }
-}{for(var i = 0, len = gdjs.NewSceneCode.GDCircelFilledObjects1.length ;i < len;++i) {
-    gdjs.NewSceneCode.GDCircelFilledObjects1[i].deleteFromScene(runtimeScene);
-}
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.NewSceneCode.mapOfGDgdjs_46NewSceneCode_46GDTriangleFilledObjects1Objects, 95, 92, "8");
+}{runtimeScene.getVariables().get("x").setNumber(1);
 }}
 
 }
@@ -122,17 +129,32 @@ gdjs.NewSceneCode.GDBoxFilledObjects1.createFrom(runtimeScene.getObjects("BoxFil
 
 gdjs.NewSceneCode.condition0IsTrue_0.val = false;
 {
+{gdjs.NewSceneCode.conditionTrue_1 = gdjs.NewSceneCode.condition0IsTrue_0;
+gdjs.NewSceneCode.condition0IsTrue_1.val = false;
+gdjs.NewSceneCode.condition1IsTrue_1.val = false;
+gdjs.NewSceneCode.condition2IsTrue_1.val = false;
+{
 for(var i = 0, k = 0, l = gdjs.NewSceneCode.GDBoxFilledObjects1.length;i<l;++i) {
-    if ( gdjs.NewSceneCode.GDBoxFilledObjects1[i].getY() > 270 ) {
-        gdjs.NewSceneCode.condition0IsTrue_0.val = true;
+    if ( gdjs.NewSceneCode.GDBoxFilledObjects1[i].getX() == 92 ) {
+        gdjs.NewSceneCode.condition0IsTrue_1.val = true;
         gdjs.NewSceneCode.GDBoxFilledObjects1[k] = gdjs.NewSceneCode.GDBoxFilledObjects1[i];
         ++k;
     }
 }
-gdjs.NewSceneCode.GDBoxFilledObjects1.length = k;}if (gdjs.NewSceneCode.condition0IsTrue_0.val) {
+gdjs.NewSceneCode.GDBoxFilledObjects1.length = k;}if ( gdjs.NewSceneCode.condition0IsTrue_1.val ) {
+{
+gdjs.NewSceneCode.condition1IsTrue_1.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Right");
+}if ( gdjs.NewSceneCode.condition1IsTrue_1.val ) {
+{
+gdjs.NewSceneCode.condition2IsTrue_1.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("x")) == 0;
+}}
+}
+gdjs.NewSceneCode.conditionTrue_1.val = true && gdjs.NewSceneCode.condition0IsTrue_1.val && gdjs.NewSceneCode.condition1IsTrue_1.val && gdjs.NewSceneCode.condition2IsTrue_1.val;
+}
+}if (gdjs.NewSceneCode.condition0IsTrue_0.val) {
 /* Reuse gdjs.NewSceneCode.GDBoxFilledObjects1 */
 {for(var i = 0, len = gdjs.NewSceneCode.GDBoxFilledObjects1.length ;i < len;++i) {
-    gdjs.NewSceneCode.GDBoxFilledObjects1[i].deleteFromScene(runtimeScene);
+    gdjs.NewSceneCode.GDBoxFilledObjects1[i].setX(185);
 }
 }}
 
@@ -141,19 +163,13 @@ gdjs.NewSceneCode.GDBoxFilledObjects1.length = k;}if (gdjs.NewSceneCode.conditio
 
 {
 
-gdjs.NewSceneCode.GDCircelFilledObjects1.createFrom(runtimeScene.getObjects("CircelFilled"));
 
 gdjs.NewSceneCode.condition0IsTrue_0.val = false;
 {
-for(var i = 0, k = 0, l = gdjs.NewSceneCode.GDCircelFilledObjects1.length;i<l;++i) {
-    if ( gdjs.NewSceneCode.GDCircelFilledObjects1[i].getY() > 270 ) {
-        gdjs.NewSceneCode.condition0IsTrue_0.val = true;
-        gdjs.NewSceneCode.GDCircelFilledObjects1[k] = gdjs.NewSceneCode.GDCircelFilledObjects1[i];
-        ++k;
-    }
-}
-gdjs.NewSceneCode.GDCircelFilledObjects1.length = k;}if (gdjs.NewSceneCode.condition0IsTrue_0.val) {
-}
+gdjs.NewSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "Right");
+}if (gdjs.NewSceneCode.condition0IsTrue_0.val) {
+{runtimeScene.getVariables().get("x").setNumber(0);
+}}
 
 }
 
@@ -182,6 +198,14 @@ gdjs.NewSceneCode.GDCirclespaceObjects1.length = 0;
 gdjs.NewSceneCode.GDCirclespaceObjects2.length = 0;
 gdjs.NewSceneCode.GDTrianglespaceObjects1.length = 0;
 gdjs.NewSceneCode.GDTrianglespaceObjects2.length = 0;
+gdjs.NewSceneCode.GDHeartObjects1.length = 0;
+gdjs.NewSceneCode.GDHeartObjects2.length = 0;
+gdjs.NewSceneCode.GDLiveTextObjects1.length = 0;
+gdjs.NewSceneCode.GDLiveTextObjects2.length = 0;
+gdjs.NewSceneCode.GDScoreTxtObjects1.length = 0;
+gdjs.NewSceneCode.GDScoreTxtObjects2.length = 0;
+gdjs.NewSceneCode.GDLineUpObjects1.length = 0;
+gdjs.NewSceneCode.GDLineUpObjects2.length = 0;
 
 gdjs.NewSceneCode.eventsList0xb43b0(runtimeScene);
 return;
