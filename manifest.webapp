@@ -1,37 +1,19 @@
 {
   "version": "1",
-  "name": "KaiOS hosted starter",
+  "name": "Swipe",
   "launch_path": "/Swipetheshapegametest/index.html",
-  "description": "KaiOS hosted app with example use cases to get started",
+  "description": "For testing",
   "icons": {
-    "16": "/",
-    "32": "/",
-    "48": "/",
-    "60": "/",
-    "64": "/",
-    "90": "/",
-    "120": "/",
-    "128": "/"
+    
   },
   "developer": {
-    "name": "Robert Nyman",
-    "url": "http://robertnyman.com"
+    "name": "rahul",
+    "url": "http://"
   },
   "installs_allowed_from": [
     "*"
   ],
   "default_locale": "en",
-  "permissions": {
-    "desktop-notification": {
-      "description": "To show notifications"
-    },
-    "geolocation": {
-      "description": "Marking out user location"
-    },
-    "alarms": {
-      "description": "Scheduling alarms"
-    }
-  },
+
   "cursor": false
 }
-
