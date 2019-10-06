@@ -4,7 +4,8 @@
   "launch_path": "/Swipetheshapegametest/index.html",
   "description": "For testing",
   "icons": {
-    
+     "56": "/icon56.png",
+    "112": "/icon112.png"
   },
   "developer": {
     "name": "rahul",
