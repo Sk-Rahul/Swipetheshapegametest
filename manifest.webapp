@@ -1,17 +1,29 @@
 {
   "version": "1",
-  "name": "Swipe the Shape"
+  "name": "Swipe",
   "launch_path": "/Swipetheshapegametest/index.html",
-  "description": "Swipe the Shape mini Game",
+  "description": "For testing",
   "icons": {
+    
   },
   "developer": {
-    "name": "Faiz"
-    "url": "https://sk-rahul.github.io/Swipetheshapegametest"
+    "name": "rahul",
+    "url": "http://"
   },
   "installs_allowed_from": [
     "*"
   ],
   "default_locale": "en",
+  "permissions": {
+    "desktop-notification": {
+      "description": "To show notifications"
+    },
+    "geolocation": {
+      "description": "Marking out user location"
+    },
+    "alarms": {
+      "description": "Scheduling alarms"
+    }
   },
+  "cursor": false
 }
