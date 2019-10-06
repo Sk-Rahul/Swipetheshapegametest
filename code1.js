@@ -17,9 +17,9 @@ gdjs.GameOverCode.GDscoreObjects2= [];
 gdjs.GameOverCode.conditionTrue_0 = {val:false};
 gdjs.GameOverCode.condition0IsTrue_0 = {val:false};
 gdjs.GameOverCode.condition1IsTrue_0 = {val:false};
+var Adsplay = false;
 
-
-gdjs.GameOverCode.eventsList0x754014 = function(runtimeScene) {
+gdjs.GameOverCode.eventsList0x694d5c = function(runtimeScene) {
 
 {
 
@@ -34,8 +34,15 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.storage.elementExistsIn
 }
 
 
-}; //End of gdjs.GameOverCode.eventsList0x754014
+}; //End of gdjs.GameOverCode.eventsList0x694d5c
 gdjs.GameOverCode.eventsList0xb43b0 = function(runtimeScene) {
+
+{
+
+
+
+}
+
 
 {
 
@@ -49,9 +56,10 @@ gdjs.GameOverCode.GDscoreObjects1.createFrom(runtimeScene.getObjects("score"));
     gdjs.GameOverCode.GDscoreObjects1[i].setString(gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("score")));
 }
 }{gdjs.evtTools.sound.playSound(runtimeScene, "GameOver.wav", false, 100, 1);
+        Adsplay = true;
 }
 { //Subevents
-gdjs.GameOverCode.eventsList0x754014(runtimeScene);} //End of subevents
+gdjs.GameOverCode.eventsList0x694d5c(runtimeScene);} //End of subevents
 }
 
 }
@@ -101,6 +109,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(run
 
 document.addEventListener("DOMContentLoaded", () => {
     // getKaiAd( config )
+if(Adsplay){
     getKaiAd({
         publisher: '3b38ba5c-be76-40f3-9bec-a1f37e7a7378',
         app: 'Swipe',
@@ -113,8 +122,9 @@ document.addEventListener("DOMContentLoaded", () => {
             ad.call('display')
         }
     })
-    
+} 
     });
+    
 
 
 
