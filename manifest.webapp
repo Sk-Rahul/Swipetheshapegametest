@@ -6,6 +6,7 @@
   "icons": {
      "56": "/icon56.png",
     "112": "/icon112.png"
+    "128": "/icon128.png"
   },
   "developer": {
     "name": "rahul",
