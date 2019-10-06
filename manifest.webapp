@@ -14,22 +14,6 @@
     "*"
   ],
   "default_locale": "en",
-<<<<<<< HEAD
 
   "cursor": false
 }
-=======
-  "permissions": {
-    "desktop-notification": {
-      "description": "To show notifications"
-    },
-    "geolocation": {
-      "description": "Marking out user location"
-    },
-    "alarms": {
-      "description": "Scheduling alarms"
-    }
-  },
-  "cursor": false
-}
->>>>>>> 623a22ddb34909dbd7aee08bbf767c4b7e459754
