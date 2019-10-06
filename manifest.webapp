@@ -1,0 +1,17 @@
+{
+  "version": "1",
+  "name": "Swipe the Shape"
+  "launch_path": "/Swipetheshapegametest/index.html",
+  "description": "Swipe the Shape mini Game",
+  "icons": {
+  },
+  "developer": {
+    "name": "Faiz"
+    "url": "https://sk-rahul.github.io/Swipetheshapegametest"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  },
+}

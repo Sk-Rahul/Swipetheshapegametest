@@ -19,7 +19,7 @@ gdjs.GameOverCode.condition0IsTrue_0 = {val:false};
 gdjs.GameOverCode.condition1IsTrue_0 = {val:false};
 
 
-gdjs.GameOverCode.eventsList0x74fb44 = function(runtimeScene) {
+gdjs.GameOverCode.eventsList0x754014 = function(runtimeScene) {
 
 {
 
@@ -34,7 +34,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.storage.elementExistsIn
 }
 
 
-}; //End of gdjs.GameOverCode.eventsList0x74fb44
+}; //End of gdjs.GameOverCode.eventsList0x754014
 gdjs.GameOverCode.eventsList0xb43b0 = function(runtimeScene) {
 
 {
@@ -51,7 +51,7 @@ gdjs.GameOverCode.GDscoreObjects1.createFrom(runtimeScene.getObjects("score"));
 }{gdjs.evtTools.sound.playSound(runtimeScene, "GameOver.wav", false, 100, 1);
 }
 { //Subevents
-gdjs.GameOverCode.eventsList0x74fb44(runtimeScene);} //End of subevents
+gdjs.GameOverCode.eventsList0x754014(runtimeScene);} //End of subevents
 }
 
 }
