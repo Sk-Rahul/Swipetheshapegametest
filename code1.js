@@ -106,46 +106,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     getKaiAd({
         publisher: '3b38ba5c-be76-40f3-9bec-a1f37e7a7378',
-        app: 'Swipe',
+        app: 'yourAppName',
         slot: 'yourSlotName',
-        
-        h: 264,
-        w: 240,
-        // Max supported size is 240x264
-        
-    
-        // If container (HTMLElement) is not provided,
-        // a fullscreen ad will be requested
-    
-        // A fullscreen ad it will be
-        // absolutely positioned and document.body appended
-    
-        // if container provided,
-        // a responsive banner type ad will be requested
-        container: document.getElementById('ad-container'),
-    
         onerror: err => console.error('Custom catch:', err),
         onready: ad => {
-            // Ad is resolved, loaded, and is ready to be displayed
+            // Ad is ready to be displayed
+            
             // calling 'display' will display the ad
-    
-            ad.call('display', {
-                // In KaiOS the app developer is responsible
-                // for user navigation, and as such can provide
-                // navigational className and/or a tabindex
-    
-                tabindex: 0,
-    
-                // if the application is using
-                // a classname to navigate
-                // this classname will be applied
-                // to the container
-                navClass: 'items',
-    
-                // display style will be applied
-                // to the container block or inline-block
-                display: 'block',
-            })
+            ad.call('display')
         }
     })
     })
