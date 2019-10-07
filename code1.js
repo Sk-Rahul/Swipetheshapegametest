@@ -46,7 +46,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = false;
 gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.GameOverCode.condition0IsTrue_0.val) {
         AdsPlay = true;
-        console.log ("h");
+        console.log ("h2");
         console.log (AdsPlay);
 
 
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             // custom event
 
-           Document.addEventListener('click', function btnListener() {
+           document.addEventListener('click', function btnListener() {
               console.log("in adcall function")
                 // calling 'display' will display the ad
                 ad.call('display')
