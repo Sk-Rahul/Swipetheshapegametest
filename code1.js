@@ -112,7 +112,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(run
 
 document.addEventListener("DOMContentLoaded", () => {
     // getKaiAd( config )
-    
+    console.log("function Workign");
 
     getKaiAd({
         publisher: '3b38ba5c-be76-40f3-9bec-a1f37e7a7378',
@@ -123,11 +123,11 @@ document.addEventListener("DOMContentLoaded", () => {
             // Ad is ready to be displayed
             
             // calling 'display' will display the ad
-        if(AdsPlay){
-            console.log("function Workign");
+        
+            
             ad.call('display')
            
-        }
+    
             ad.on('display', () => console.log('display event') ) 
         }
     })
