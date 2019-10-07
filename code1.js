@@ -19,7 +19,7 @@ gdjs.GameOverCode.condition0IsTrue_0 = {val:false};
 gdjs.GameOverCode.condition1IsTrue_0 = {val:false};
 var AdsPlay = false;
 console.log(AdsPlay);
-console.log("2nd");
+console.log("3nd");
 
 gdjs.GameOverCode.eventsList0x694d5c = function(runtimeScene) {
 
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // custom event
 
            
-            document.addEventListener("click", function btnListener() {
+            document.addEventListener("keydown", function btnListener() {
                 console.log("In Event listner");
                 // calling 'display' will display the ad
                 if(AdsPlay){
