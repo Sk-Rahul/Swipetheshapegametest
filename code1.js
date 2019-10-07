@@ -100,10 +100,12 @@ gdjs.GameOverCode.GDhighScoreObjects1.createFrom(runtimeScene.getObjects("highSc
 gdjs.GameOverCode.condition0IsTrue_0.val = false;
 {
 gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(runtimeScene);
-}if (gdjs.GameOverCode.condition0IsTrue_0.val) {
+}if(!AdsPlay){
+if (gdjs.GameOverCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "MainGame", true);
 }}
 
+}
 }
 
 
@@ -126,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // custom event
 
            
-            document.addEventListener("click", function btnListener() {
+            document.addEventListener("keypress", function btnListener() {
                 console.log("In Event listner");
                 // calling 'display' will display the ad
                 if(AdsPlay){
