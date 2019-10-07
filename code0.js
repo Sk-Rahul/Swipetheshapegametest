@@ -66,7 +66,7 @@ gdjs.MainGameCode.condition0IsTrue_1 = {val:false};
 gdjs.MainGameCode.condition1IsTrue_1 = {val:false};
 gdjs.MainGameCode.condition2IsTrue_1 = {val:false};
 gdjs.MainGameCode.condition3IsTrue_1 = {val:false};
-console.log("First");
+
 
 gdjs.MainGameCode.eventsList0x6971fc = function(runtimeScene) {
 
