@@ -124,11 +124,13 @@ document.addEventListener("DOMContentLoaded", () => {
             
             // custom event
 
-           document.addEventListener('click', function btnListener() {
-              console.log("in adcall function")
+           
+              if(AdsPlay){
+                  console.log("in Adsplay");
                 // calling 'display' will display the ad
                 ad.call('display')
-            })
+              }
+          
         }
     })				
         
