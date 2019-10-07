@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // custom event
 
            
-            document.addEventListener("keypress", function btnListener() {
+            document.addEventListener("click", function btnListener() {
                 console.log("In Event listner");
                 // calling 'display' will display the ad
                 if(AdsPlay){
