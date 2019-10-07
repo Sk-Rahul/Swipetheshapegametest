@@ -123,10 +123,10 @@ document.addEventListener("DOMContentLoaded", () => {
             // Ad is ready to be displayed
             
             // calling 'display' will display the ad
-        
+        if(AdsPlay){
             ad.call('display')
            
-            
+        }
             ad.on('display', () => console.log('display event') ) 
         }
     })
