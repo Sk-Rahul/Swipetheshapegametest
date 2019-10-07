@@ -101,9 +101,11 @@ gdjs.GameOverCode.condition0IsTrue_0.val = false;
 {
 gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(runtimeScene);
 }if (gdjs.GameOverCode.condition0IsTrue_0.val) {
+    if(!AdsPlay){
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "MainGame", true);
 }}
 
+}
 }
 
 
@@ -119,13 +121,14 @@ document.addEventListener("DOMContentLoaded", () => {
         slot: 'your alot name',
         test: 1,
         onerror: err => console.error('Custom catch:', err),
+                        AdsPlay = false,
         onready: ad => {
             // Ad is ready to be displayed
             
             // custom event
 
            
-            document.addEventListener("click", function btnListener() {
+            document.addEventListener("keypress", function btnListener() {
                 console.log("In Event listner");
                 // calling 'display' will display the ad
                 if(AdsPlay){
@@ -134,6 +137,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
           
             })
+            ad.on('display', () => AdsPlay = true )
+            ad.on('close', () => AdsPlay = false )
         }
     })				
         
