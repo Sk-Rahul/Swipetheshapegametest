@@ -19,7 +19,7 @@ gdjs.GameOverCode.condition0IsTrue_0 = {val:false};
 gdjs.GameOverCode.condition1IsTrue_0 = {val:false};
 var AdsPlay = false;
 console.log(AdsPlay);
-console.log("3nd");
+console.log("4nd");
 
 gdjs.GameOverCode.eventsList0x694d5c = function(runtimeScene) {
 
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
         app: 'your app name',
         slot: 'your alot name',
        
-        onerror: err => console.error('Custom catch:', err),
+        onerror: err => console.error(AdsPlay = false),
         onready: ad => {
             // Ad is ready to be displayed
             
