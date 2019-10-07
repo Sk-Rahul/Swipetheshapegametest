@@ -48,27 +48,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustB
 
         console.log ("hi !!");
 
-    document.addEventListener("DOMContentLoaded", () => {
-        // getKaiAd( config )
-        
-    
-        getKaiAd({
-            publisher: '3b38ba5c-be76-40f3-9bec-a1f37e7a7378',
-            app: 'yourAppName',
-            slot: 'yourSlotName',
-            onerror: err => console.error('Custom catch:', err),
-            onready: ad => {
-                // Ad is ready to be displayed
-                
-                // calling 'display' will display the ad
-            
-                ad.call('display')
-               
-                
-                ad.on('display', () => console.log('display event') ) 
-            }
-        })
-        })
+
     
 
 
@@ -129,7 +109,27 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(run
 }; //End of gdjs.GameOverCode.eventsList0xb43b0
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    // getKaiAd( config )
+    
 
+    getKaiAd({
+        publisher: '3b38ba5c-be76-40f3-9bec-a1f37e7a7378',
+        app: 'yourAppName',
+        slot: 'yourSlotName',
+        onerror: err => console.error('Custom catch:', err),
+        onready: ad => {
+            // Ad is ready to be displayed
+            
+            // calling 'display' will display the ad
+        
+            ad.call('display')
+           
+            
+            ad.on('display', () => console.log('display event') ) 
+        }
+    })
+    })
 
 
 
