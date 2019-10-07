@@ -66,12 +66,12 @@ gdjs.MainGameCode.condition0IsTrue_1 = {val:false};
 gdjs.MainGameCode.condition1IsTrue_1 = {val:false};
 gdjs.MainGameCode.condition2IsTrue_1 = {val:false};
 gdjs.MainGameCode.condition3IsTrue_1 = {val:false};
-
+console.log("First");
 
 gdjs.MainGameCode.eventsList0x6971fc = function(runtimeScene) {
 
 {
-
+    console.log("Second");
 gdjs.MainGameCode.GDBoxFilledObjects2.createFrom(runtimeScene.getObjects("BoxFilled"));
 gdjs.MainGameCode.GDLineUpObjects2.createFrom(runtimeScene.getObjects("LineUp"));
 
