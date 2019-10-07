@@ -71,10 +71,9 @@ gdjs.MainGameCode.condition3IsTrue_1 = {val:false};
 gdjs.MainGameCode.eventsList0x6971fc = function(runtimeScene) {
 
 {
-    console.log("Second");
+   console.log("hi");
 gdjs.MainGameCode.GDBoxFilledObjects2.createFrom(runtimeScene.getObjects("BoxFilled"));
 gdjs.MainGameCode.GDLineUpObjects2.createFrom(runtimeScene.getObjects("LineUp"));
-console.log("third");
 gdjs.MainGameCode.condition0IsTrue_0.val = false;
 gdjs.MainGameCode.condition1IsTrue_0.val = false;
 gdjs.MainGameCode.condition2IsTrue_0.val = false;
