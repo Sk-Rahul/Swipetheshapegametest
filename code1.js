@@ -17,7 +17,7 @@ gdjs.GameOverCode.GDscoreObjects2= [];
 gdjs.GameOverCode.conditionTrue_0 = {val:false};
 gdjs.GameOverCode.condition0IsTrue_0 = {val:false};
 gdjs.GameOverCode.condition1IsTrue_0 = {val:false};
-var AdsPlay = false;
+var AdsPlay = true;
 
 
 gdjs.GameOverCode.eventsList0x694d5c = function(runtimeScene) {
@@ -46,7 +46,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = false;
 gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.GameOverCode.condition0IsTrue_0.val) {
         AdsPlay = true;
-        console.log ("h3");
+        console.log ("h4");
         console.log (AdsPlay);
 
 
