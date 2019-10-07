@@ -116,6 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // calling 'display' will display the ad
             if(AdsPlay){
             ad.call('display')
+            AdsPlay = false;
             }
         }
     })
