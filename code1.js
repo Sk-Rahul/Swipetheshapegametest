@@ -19,7 +19,7 @@ gdjs.GameOverCode.condition0IsTrue_0 = {val:false};
 gdjs.GameOverCode.condition1IsTrue_0 = {val:false};
 var AdsPlay = false;
 console.log(AdsPlay);
-console.log("6nd");
+console.log("7nd");
 
 gdjs.GameOverCode.eventsList0x694d5c = function(runtimeScene) {
 
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
         app: 'your app name',
         slot: 'your alot name',
        
-        onerror: err => AdsPlay = false,
+        onerror: err =>{ AdsPlay = false},
         onready: ad => {
             // Ad is ready to be displayed
             
