@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ad.call('display')
      
             
-            
+            ad.on('display', () => console.log('display event') ) 
         }
     })
     })
