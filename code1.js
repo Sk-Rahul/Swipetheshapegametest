@@ -46,7 +46,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = false;
 gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.GameOverCode.condition0IsTrue_0.val) {
         AdsPlay = true;
-        console.log ("h5");
+        console.log ("h6");
         console.log (AdsPlay);
 
 
@@ -101,12 +101,11 @@ gdjs.GameOverCode.condition0IsTrue_0.val = false;
 {
 gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(runtimeScene);
 }if (gdjs.GameOverCode.condition0IsTrue_0.val) {
-    if(!AdsPlay){
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "MainGame", true);
 }}
 
 }
-}
+
 
 
 }; //End of gdjs.GameOverCode.eventsList0xb43b0
