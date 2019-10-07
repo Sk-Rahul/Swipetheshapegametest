@@ -19,6 +19,7 @@ gdjs.GameOverCode.condition0IsTrue_0 = {val:false};
 gdjs.GameOverCode.condition1IsTrue_0 = {val:false};
 var AdsPlay = false;
 
+
 gdjs.GameOverCode.eventsList0x694d5c = function(runtimeScene) {
 
 {
@@ -124,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 
-
+    console.log(AdsPlay);
 
 
 
