@@ -120,7 +120,6 @@ document.addEventListener("DOMContentLoaded", () => {
         slot: 'your alot name',
         test: 1,
         onerror: err => console.error('Custom catch:', err),
-                        AdsPlay = false,
         onready: ad => {
             // Ad is ready to be displayed
             
