@@ -17,7 +17,7 @@ gdjs.GameOverCode.GDscoreObjects2= [];
 gdjs.GameOverCode.conditionTrue_0 = {val:false};
 gdjs.GameOverCode.condition0IsTrue_0 = {val:false};
 gdjs.GameOverCode.condition1IsTrue_0 = {val:false};
-var Adsplay = false;
+
 
 gdjs.GameOverCode.eventsList0x694d5c = function(runtimeScene) {
 
@@ -51,12 +51,13 @@ gdjs.GameOverCode.condition0IsTrue_0.val = false;
 {
 gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.GameOverCode.condition0IsTrue_0.val) {
+    Adsplay = true;
 gdjs.GameOverCode.GDscoreObjects1.createFrom(runtimeScene.getObjects("score"));
 {for(var i = 0, len = gdjs.GameOverCode.GDscoreObjects1.length ;i < len;++i) {
     gdjs.GameOverCode.GDscoreObjects1[i].setString(gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().get("score")));
 }
 }{gdjs.evtTools.sound.playSound(runtimeScene, "GameOver.wav", false, 100, 1);
-        Adsplay = true;
+        
 }
 { //Subevents
 gdjs.GameOverCode.eventsList0x694d5c(runtimeScene);} //End of subevents
@@ -121,6 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // calling 'display' will display the ad
             if(Adsplay){
             ad.call('display')
+            Adsplay = false;
             }
         }
     })
