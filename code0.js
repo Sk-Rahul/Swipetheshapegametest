@@ -69,7 +69,7 @@ gdjs.MainGameCode.condition3IsTrue_1 = {val:false};
 
 
 gdjs.MainGameCode.eventsList0x6971fc = function(runtimeScene) {
-    console.log("h");
+   
 {
   
 gdjs.MainGameCode.GDBoxFilledObjects2.createFrom(runtimeScene.getObjects("BoxFilled"));
@@ -879,6 +879,7 @@ gdjs.MainGameCode.condition0IsTrue_0.val = false;
 {
 gdjs.MainGameCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(runtimeScene);
 }if (gdjs.MainGameCode.condition0IsTrue_0.val) {
+    console.log("Working");
 {runtimeScene.getVariables().get("GameStart").setNumber(1);
 }{gdjs.evtTools.camera.hideLayer(runtimeScene, "Menu");
 }{gdjs.evtTools.camera.showLayer(runtimeScene, "");
