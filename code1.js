@@ -46,7 +46,7 @@ gdjs.GameOverCode.condition0IsTrue_0.val = false;
 gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.GameOverCode.condition0IsTrue_0.val) {
         AdsPlay = true;
-        console.log ("h2");
+        console.log ("h3");
         console.log (AdsPlay);
 
 
@@ -125,12 +125,13 @@ document.addEventListener("DOMContentLoaded", () => {
             // custom event
 
            
-              if(AdsPlay){
-                  console.log("in Adsplay");
+            document.addEventListener("keypress", function btnListener() {
                 // calling 'display' will display the ad
+                if(AdsPlay){
                 ad.call('display')
-              }
+                }
           
+            })
         }
     })				
         
