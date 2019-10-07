@@ -118,6 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ad.call('display')
             AdsPlay = false;
             }
+            ad.on('display', () => console.log('display event') )
         }
     })
     })
