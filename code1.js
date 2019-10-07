@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
         publisher: 'yourPublisherID',
         app: 'your app name',
         slot: 'your alot name',
-        test: 1,
+       
         onerror: err => console.error('Custom catch:', err),
         onready: ad => {
             // Ad is ready to be displayed
