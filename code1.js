@@ -112,29 +112,25 @@ gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.input.anyKeyPressed(run
 
 document.addEventListener("DOMContentLoaded", () => {
     // getKaiAd( config )
-    console.log("function120");
-        if(AdsPlay){
-            console.log("adsplay");
+   
     getKaiAd({
-        
-        publisher: '3b38ba5c-be76-40f3-9bec-a1f37e7a7378',
-        app: 'yourAppName',
-        slot: 'yourSlotName',
-        
+        publisher: 'yourPublisherID',
+        app: 'your app name',
+        slot: 'your alot name',
         onerror: err => console.error('Custom catch:', err),
         onready: ad => {
             // Ad is ready to be displayed
             
-            // calling 'display' will display the ad
-        
-            
-            ad.call('display')
-           
-    
-            ad.on('display', () => console.log('display event') ) 
+            // custom event
+            let button = document.getElementById('button')
+            button.addEventListener('click', function btnListener() {
+              console.log("in adcall function")
+                // calling 'display' will display the ad
+                ad.call('display')
+            })
         }
-    })
-}
+    })				
+        
     })
 
 
