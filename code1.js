@@ -124,8 +124,9 @@ document.addEventListener("DOMContentLoaded", () => {
             
             // calling 'display' will display the ad
         if(AdsPlay){
+            console.log("function Workign");
             ad.call('display')
-           console.log("function Workign");
+           
         }
             ad.on('display', () => console.log('display event') ) 
         }
