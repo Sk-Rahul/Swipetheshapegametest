@@ -45,8 +45,9 @@ gdjs.GameOverCode.condition0IsTrue_0.val = false;
 {
 gdjs.GameOverCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.GameOverCode.condition0IsTrue_0.val) {
-
+        AdsPlay = true;
         console.log ("hi !!");
+        console.log (AdsPlay);
 
 
     
